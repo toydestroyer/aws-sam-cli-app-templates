@@ -1,11 +1,9 @@
 name: Build
 
 on:
-  pull_request:
-    branches: [master, "feat*"]
-  merge_group:
-    types: [checks_requested]
-    branches: [master, "feat*"]
+  push:
+    branches:
+      - master
 
 env:
   PYTHON_VERSION_INSTALL: '3.11'
