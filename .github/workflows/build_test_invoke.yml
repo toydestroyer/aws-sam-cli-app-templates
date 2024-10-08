@@ -51,7 +51,6 @@ jobs:
   # Ruby
   build-test-ruby:
     name: ${{ matrix.type }} / Ruby ${{ matrix.version }}
-    if: github.repository_owner == 'aws'
     strategy:
       fail-fast: false
       matrix:
